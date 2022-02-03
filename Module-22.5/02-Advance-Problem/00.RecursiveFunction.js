@@ -2,7 +2,7 @@
 শুধু মাথায় রাখো রিকার্সন নামে একটা জিনিস আছে।
 সেটা একটা ফাংশনকে নিজের ভিতর থেকে কল করে।  */
 //Sum of this: 1+2+3+....+n using Recursive Function 
-const n=5;
+const n=100;
 function sumOfTheSeries(num){
     if(num>1){
         return num+sumOfTheSeries(num-1);
