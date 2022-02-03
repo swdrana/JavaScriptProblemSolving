@@ -11,12 +11,8 @@ function paperRequirements(b1,b2,b3){
     const book1stPages=100;
     const book2ndPages=200;
     const book3rdPages=300;
-    if(b1>0 && b2>0 && b3>0){
-        return (b1*book1stPages)+(b2*book2ndPages)+(b3*book3rdPages);
-    }else{
-        console.log("can't give negative no");
-    }
+    return (b1*book1stPages)+(b2*book2ndPages)+(b3*book3rdPages);
 }
-let banglaBook=-3, englishBook=2, mathBook=1;
+let banglaBook=3, englishBook=2, mathBook=1;
 const totalPage = paperRequirements(banglaBook, englishBook, mathBook);
-console.log(totalPage==Number ? `you need total:${totalPage} pages` : 'try again!');
+console.log('you need total:',totalPage,'pages');
